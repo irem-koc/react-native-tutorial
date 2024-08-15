@@ -2,16 +2,16 @@
 import React from 'react';
 
 import {HeaderBackButton} from '@react-navigation/elements';
-import {NativeStackNavigationOptions} from '@react-navigation/native-stack';
+import {StackNavigationOptions} from '@react-navigation/stack';
 import {StyleSheet, Text} from 'react-native';
 import RootNavigation from '../providers/RootNavigation';
-export const headerOptions: NativeStackNavigationOptions = {
+export const headerOptions: StackNavigationOptions = {
   headerTitle: navigation => {
     return <Text style={{fontWeight: 'bold'}}>{navigation.children}</Text>;
   },
   headerTitleAlign: 'center',
 };
-export const pageHeaderOptions: NativeStackNavigationOptions = {
+export const pageHeaderOptions: StackNavigationOptions = {
   ...headerOptions,
   headerLeft: () => {
     return (
