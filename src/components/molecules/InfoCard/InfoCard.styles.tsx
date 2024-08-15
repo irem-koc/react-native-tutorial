@@ -2,7 +2,7 @@ import {createStyleSheet} from 'react-native-unistyles';
 
 const stylesheet = createStyleSheet(() => ({
   mainContainer: {
-    padding: 8,
+    padding: 20,
     borderRadius: 8,
     justifyContent: 'center',
   },
@@ -17,7 +17,7 @@ const stylesheet = createStyleSheet(() => ({
     color: 'white',
   },
   leftSection: {
-    width: '60%',
+    width: '70%',
     justifyContent: 'center',
     padding: 0,
   },
