@@ -1,11 +1,12 @@
 import React from 'react';
 import RootStackNavigator from './navigation/RootStackNavigator';
+import {LocalStorage} from './providers';
 
 function App(): React.JSX.Element {
-  const isUserLoggedIn = false;
-
   return (
-    <RootStackNavigator initialRouteName={isUserLoggedIn ? 'Main' : 'Auth'} />
+    <RootStackNavigator
+      initialRouteName={LocalStorage.getItem('accessToken') ? 'Main' : 'Auth'}
+    />
   );
 }
 
