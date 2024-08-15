@@ -8,7 +8,7 @@ import Container from '../../../components/molecules/Container/Container';
 import InfoCard from '../../../components/molecules/InfoCard/InfoCard';
 import stylesheet from './Login.styles';
 
-const Login = () => {
+const Login = ({navigation}: any) => {
   const {styles} = useStyles(stylesheet);
   return (
     <Container style={styles.mainContainer}>
@@ -50,6 +50,9 @@ const Login = () => {
               placeholder="Giriş Yap"
               disabled={false}
             />
+            <Text onPress={() => navigation.navigate('BarcodeReader')}>
+              To barcode reader page
+            </Text>
           </View>
         )}
       </Formik>
