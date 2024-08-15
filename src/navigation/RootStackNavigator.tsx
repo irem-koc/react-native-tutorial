@@ -8,6 +8,7 @@ export type RootStackParamList = {
   Main: undefined;
   Home: undefined;
   Login: undefined;
+  BarcodeReader: undefined;
 };
 type Props = {
   initialRouteName: keyof RootStackParamList;
