@@ -1,9 +1,9 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import LoginScreen from '../../pages/auth/Login/Login';
 import {pageHeaderOptions} from '../NavigationOptions';
 import {RootStackParamList} from '../RootStackNavigator';
-const AuthStack = createNativeStackNavigator<RootStackParamList>();
+const AuthStack = createStackNavigator<RootStackParamList>();
 
 const AuthStackNavigator = () => {
   return (
