@@ -2,7 +2,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import App from './App';
 
-const AppRouter = () => {
+const AppProvider = () => {
   return (
     <NavigationContainer>
       <App />
@@ -10,4 +10,4 @@ const AppRouter = () => {
   );
 };
 
-export default AppRouter;
+export default AppProvider;
