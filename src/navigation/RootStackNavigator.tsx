@@ -1,5 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
-import {createStackNavigator} from '@react-navigation/stack';
+import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
 import AuthStackNavigator from './auth/AuthStack';
 import MainStackNavigator from './main/MainStack';
 
@@ -17,8 +17,17 @@ const RootStack = createStackNavigator<RootStackParamList>();
 const RootStackNavigator = ({initialRouteName}: Props) => {
   return (
     <RootStack.Navigator initialRouteName={initialRouteName}>
-      <RootStack.Group>
-        <RootStack.Screen name="Auth" component={AuthStackNavigator} />
+      <RootStack.Group
+        screenOptions={{
+          headerShown: false,
+          gestureEnabled: false,
+          ...TransitionPresets.ScaleFromCenterAndroid,
+        }}>
+        <RootStack.Screen
+          name="Auth"
+          options={{gestureEnabled: false}}
+          component={AuthStackNavigator}
+        />
         <RootStack.Screen name="Main" component={MainStackNavigator} />
       </RootStack.Group>
     </RootStack.Navigator>
