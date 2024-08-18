@@ -4679,12 +4679,17 @@ react-native-gesture-handler@^2.18.1, "react-native-gesture-handler@>= 1.0.0":
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-linear-gradient@^2.8.3:
+  version "2.8.3"
+  resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.8.3.tgz"
+  integrity sha512-KflAXZcEg54PXkLyflaSZQ3PJp4uC4whM7nT/Uot9m0e/qxFV3p6uor1983D1YOBJbJN7rrWdqIjq0T42jOJyA==
+
 react-native-mmkv@^2.12.2:
   version "2.12.2"
   resolved "https://registry.npmjs.org/react-native-mmkv/-/react-native-mmkv-2.12.2.tgz"
   integrity sha512-6058Aq0p57chPrUutLGe9fYoiDVDNMU2PKV+lLFUJ3GhoHvUrLdsS1PDSCLr00yqzL4WJQ7TTzH+V8cpyrNcfg==
 
-react-native-reanimated@^3.8.1:
+react-native-reanimated@*, react-native-reanimated@^3.8.1:
   version "3.14.0"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.14.0.tgz"
   integrity sha512-TAxLtCfRyC/nOLeWoX/8MhdIF+Fi1e1NbLhIgEm5Kv9/gioAwSNaqLUYxjIClU1RaLwSTE8iaiHNVhTU4TS9DA==
@@ -4718,6 +4723,11 @@ react-native-unistyles@^2.9.1:
   version "2.9.1"
   resolved "https://registry.npmjs.org/react-native-unistyles/-/react-native-unistyles-2.9.1.tgz"
   integrity sha512-MG+yPPHEvDuGJgXWoIEm9NcA3BEo4hK2wigvN5W4tCN8CwWwQHv4JyBBGXvF0RCQZq8qwPcfGQBdfEkfjURamA==
+
+react-native-vision-camera@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.npmjs.org/react-native-vision-camera/-/react-native-vision-camera-4.5.1.tgz"
+  integrity sha512-ob7gfBYin4lG2zlzRr5y4rYJN3NCCyJotFX1z3ul8V0N2GwkCGh31cko6hF9DXG4VocSPVYKt+K5W0CWLp3y0g==
 
 react-native@*, react-native@>=0.71.0, react-native@0.73:
   version "0.73.9"
