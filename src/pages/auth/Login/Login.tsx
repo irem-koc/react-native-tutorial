@@ -15,6 +15,7 @@ const Login = () => {
       <InfoCard
         firstPlaceholder="Merhaba,"
         secondPlaceholder="Sen de ShopNow'a üye ol ayrıcalıklı dünyayı kaçırma!"
+        icon="pencil"
       />
       <Formik
         initialValues={{nationalIdentityNo: '', phoneNumber: ''}}
