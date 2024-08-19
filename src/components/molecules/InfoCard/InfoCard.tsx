@@ -2,6 +2,7 @@ import React, {FunctionComponent} from 'react';
 import {Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useStyles} from 'react-native-unistyles';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import stylesheet from './InfoCard.styles';
 type InfoCardProps = {
   firstPlaceholder: string;
@@ -22,7 +23,7 @@ const InfoCard: FunctionComponent<InfoCardProps> = props => {
         <Text style={styles.secondPlaceholder}>{secondPlaceholder}</Text>
       </View>
       <View style={styles.rightSection}>
-        <Text>{icon}</Text>
+        {icon && <Icon name={icon} size={100} color="#000" />}
       </View>
     </LinearGradient>
   );

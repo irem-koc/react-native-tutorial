@@ -5,6 +5,7 @@ const stylesheet = createStyleSheet(() => ({
     padding: 20,
     borderRadius: 8,
     justifyContent: 'center',
+    flexDirection: 'row',
   },
   firstPlaceholder: {
     fontSize: 25,
