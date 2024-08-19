@@ -4560,6 +4560,8 @@ prettier-linter-helpers@^1.0.0:
 
 prettier@>=2, prettier@>=2.0.0, prettier@2.8.8:
   version "2.8.8"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.8.tgz"
+  integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
 pretty-format@^26.5.2:
   version "26.6.2"
@@ -4678,6 +4680,11 @@ react-native-gesture-handler@^2.18.1, "react-native-gesture-handler@>= 1.0.0":
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
     prop-types "^15.7.2"
+
+react-native-linear-gradient@^2.8.3:
+  version "2.8.3"
+  resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.8.3.tgz"
+  integrity sha512-KflAXZcEg54PXkLyflaSZQ3PJp4uC4whM7nT/Uot9m0e/qxFV3p6uor1983D1YOBJbJN7rrWdqIjq0T42jOJyA==
 
 react-native-mmkv@^2.12.2:
   version "2.12.2"
