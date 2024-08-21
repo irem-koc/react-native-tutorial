@@ -23,7 +23,7 @@ const InfoCard: FunctionComponent<InfoCardProps> = props => {
         <Text style={styles.secondPlaceholder}>{secondPlaceholder}</Text>
       </View>
       <View style={styles.rightSection}>
-        {icon && <Icon name={icon} size={100} color="#000" />}
+        {icon && <Icon name={icon} size={100} color="orange" />}
       </View>
     </LinearGradient>
   );
