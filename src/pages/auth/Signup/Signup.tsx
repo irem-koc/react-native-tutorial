@@ -15,13 +15,13 @@ const Signup = () => {
     <Container style={styles.mainContainer}>
       <InfoCard
         firstPlaceholder="Merhaba,"
-        secondPlaceholder="Sen de ShopNow'a giriş yap ayrıcalıklı dünyayı kaçırma!"
-        icon="pencil"
+        secondPlaceholder="Sen de ShopNow'a üye ol ayrıcalıklı dünyayı kaçırma!"
+        icon="user"
       />
 
       <Formik
-        initialValues={{nationalIdentityNo: '', phoneNumber: ''}}
-        onSubmit={values => console.log(values)}>
+        initialValues={{nationalIdentityNo: '', phoneNumber: '', password: ''}}
+        onSubmit={values => console.log(values, ' total signup values')}>
         {({handleChange, handleBlur, handleSubmit, values}) => (
           <View style={styles.formContainer}>
             <View>
@@ -47,7 +47,17 @@ const Signup = () => {
                 value={values.phoneNumber}
               />
             </View>
-
+            <View>
+              <Text style={styles.label}>Şifre</Text>
+              <Input
+                maxLength={11}
+                type="password"
+                placeholder="Şifre"
+                onChange={handleChange('password')}
+                onBlur={handleBlur('password')}
+                value={values.password}
+              />
+            </View>
             <PrimaryButton
               onClick={handleSubmit}
               placeholder="Giriş Yap"

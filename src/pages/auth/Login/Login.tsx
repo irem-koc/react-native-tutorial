@@ -6,17 +6,21 @@ import Input from '../../../components/atoms/Input/Input';
 import PrimaryButton from '../../../components/atoms/PrimaryButton/PrimaryButton';
 import Container from '../../../components/molecules/Container/Container';
 import InfoCard from '../../../components/molecules/InfoCard/InfoCard';
+import {LocalStorage} from '../../../providers';
+import Signup from '../Signup/Signup';
 import stylesheet from './Login.styles';
 
 const Login = () => {
   const {styles} = useStyles(stylesheet);
-  return (
+
+  return LocalStorage.getItem('accessToken') ? (
     <Container style={styles.mainContainer}>
       <InfoCard
         firstPlaceholder="Merhaba,"
-        secondPlaceholder="Sen de ShopNow'a üye ol ayrıcalıklı dünyayı kaçırma!"
-        icon="pencil"
+        secondPlaceholder="ShopNow'a giriş yap ayrıcalıklı dünyayı kaçırma!"
+        icon="login"
       />
+
       <Formik
         initialValues={{nationalIdentityNo: '', phoneNumber: ''}}
         onSubmit={values => console.log(values)}>
@@ -55,6 +59,8 @@ const Login = () => {
         )}
       </Formik>
     </Container>
+  ) : (
+    <Signup />
   );
 };
 
